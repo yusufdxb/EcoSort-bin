@@ -75,6 +75,20 @@ into either trash or recycling compartments.
 5. Upload to Arduino Uno R4
 6. Calibrate the load cell before testing
 
+## Bill of Materials (BOM)
+| Component | Qty | Cost (USD) |
+|---------|-----|------------|
+| Arduino Uno R4 WiFi | 1 | $29.00 |
+| Load Cell + HX711 | 1 | $6.99 |
+| MG996R Servo | 1 | $6.99 |
+| OLED Display | 1 | $6.99 |
+| TCS34725 Color Sensor | 1 | $3.53 |
+| HC-SR04 Ultrasonic | 1 | $3.50 |
+| IR Reflective Sensor | 1 | $0.87 |
+| Misc. wiring / enclosure | - | ~$10 |
+| **Total** |  | **~$70** |
+
+
 ## Author
 **Yusuf Guenena**  
 M.S. Robotics Engineering – Embedded Systems Design  
