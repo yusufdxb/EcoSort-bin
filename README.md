@@ -25,3 +25,4 @@ a mechanical sorting mechanism accordingly.
 - `hardware/` – Wiring and mechanical design
 - `media/` – Images and demos
 - `docs/` – Design notes and future work
+
