@@ -63,6 +63,18 @@ into either trash or recycling compartments.
 - Battery-powered operation
 - Improved enclosure and mechanics
 
+## How to Run
+1. Install Arduino IDE
+2. Install required libraries:
+   - HX711
+   - Adafruit TCS34725
+   - Adafruit GFX
+   - Adafruit SSD1306
+3. Connect hardware according to wiring diagrams
+4. Open `src/firmware/ecosort.ino`
+5. Upload to Arduino Uno R4
+6. Calibrate the load cell before testing
+
 ## Author
 **Yusuf Guenena**  
 M.S. Robotics Engineering – Embedded Systems Design  
