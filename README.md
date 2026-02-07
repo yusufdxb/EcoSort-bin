@@ -88,6 +88,13 @@ into either trash or recycling compartments.
 | Misc. wiring / enclosure | - | ~$10 |
 | **Total** |  | **~$70** |
 
+## 📽️ Demo Video
+
+<p align="center">
+  <a href="https://youtu.be/RpR4vYVQu_Y">
+    <img src="https://img.youtube.com/vi/RpR4vYVQu_Y/0.jpg" width="650"/>
+  </a>
+</p>
 
 ## Author
 **Yusuf Guenena**  
