@@ -1,5 +1,12 @@
 # EcoSort Bin – Smart Automated Waste-Sorting System
 
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Arduino_Uno_R4-teal?logo=arduino" />
+  <img src="https://img.shields.io/badge/Accuracy-97.5%25-brightgreen" />
+  <img src="https://img.shields.io/badge/Sensor_Fusion-4_Sensors-blue" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow" />
+</p>
+
 EcoSort is a low-cost embedded systems project that automatically classifies
 and sorts waste using multi-sensor fusion and a servo-driven mechanical
 platform. The system removes user guesswork by identifying waste items
