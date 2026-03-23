@@ -1,0 +1,11 @@
+trial_id,item_type,weight_g,distance_cm,ir_reflective,color_r,color_g,color_b,true_class,predicted_class,correct,excluded,sensor_notes
+1,paper,10.2,8.1,0,210,205,200,TRASH,TRASH,1,0,
+2,cardboard,12.4,9.3,0,170,140,110,TRASH,TRASH,1,0,
+3,plastic_bottle,27.1,12.5,1,240,235,228,RECYCLE,RECYCLE,1,0,
+4,mint_container,21.8,7.9,0,60,180,90,RECYCLE,RECYCLE,1,0,
+5,paper,9.8,8.4,0,215,210,205,TRASH,TRASH,1,0,
+6,cardboard,13.1,10.2,0,165,135,105,TRASH,TRASH,1,0,
+7,plastic_bottle,26.3,13.1,1,235,230,220,RECYCLE,RECYCLE,1,0,
+8,mint_container,22.4,8.2,0,55,175,85,RECYCLE,RECYCLE,1,0,
+9,paper,10.5,7.8,0,208,203,198,TRASH,TRASH,1,0,
+10,cardboard,11.9,9.7,0,172,142,112,TRASH,TRASH,1,0,
