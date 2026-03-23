@@ -58,6 +58,13 @@ That means the repo currently shows strong classification performance on complet
 | MG996R servo | sorter actuation |
 | SSD1306 OLED | user feedback |
 
+## Results Scaffold
+
+The repo now includes documentation for publishing auditable results instead of a single headline number.
+
+- [docs/RESULTS.md](docs/RESULTS.md) separates classification outcomes from mechanical reliability.
+- [docs/templates/trial_log_template.csv](docs/templates/trial_log_template.csv) provides a raw-trial logging format.
+
 ## Why This Repo Helps The Portfolio
 
 For robotics employers, this is not the headline repo. For embedded and hardware teams, it is useful because it shows:
@@ -69,7 +76,7 @@ For robotics employers, this is not the headline repo. For embedded and hardware
 ## Highest-Value Next Additions
 
 The next improvements that would raise credibility most are:
-- raw trial table or confusion matrix
+- filled raw trial table or confusion matrix
 - explicit discussion of mechanical jam rate
 - wiring diagram in the public README
 - short demo media embedded directly in the repo docs
