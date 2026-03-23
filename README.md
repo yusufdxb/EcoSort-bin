@@ -58,9 +58,9 @@ That means the repo currently shows strong classification performance on complet
 | MG996R servo | sorter actuation |
 | SSD1306 OLED | user feedback |
 
-## Results Scaffold
+## Results
 
-Supporting results docs:
+Supporting docs:
 
 - [docs/RESULTS.md](docs/RESULTS.md) separates classification outcomes from mechanical reliability.
 - [docs/templates/trial_log_template.csv](docs/templates/trial_log_template.csv) provides a raw-trial logging format.
