@@ -60,26 +60,10 @@ That means the repo currently shows strong classification performance on complet
 
 ## Results Scaffold
 
-The repo now includes documentation for publishing auditable results instead of a single headline number.
+Supporting results docs:
 
 - [docs/RESULTS.md](docs/RESULTS.md) separates classification outcomes from mechanical reliability.
 - [docs/templates/trial_log_template.csv](docs/templates/trial_log_template.csv) provides a raw-trial logging format.
-
-## Why This Repo Helps The Portfolio
-
-For robotics employers, this is not the headline repo. For embedded and hardware teams, it is useful because it shows:
-- real sensor fusion on a microcontroller
-- state-machine based embedded control
-- cost-aware prototyping
-- documented project outcomes with a written report
-
-## Highest-Value Next Additions
-
-The next improvements that would raise credibility most are:
-- filled raw trial table or confusion matrix
-- explicit discussion of mechanical jam rate
-- wiring diagram in the public README
-- short demo media embedded directly in the repo docs
 
 ## Demo
 
