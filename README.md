@@ -1,109 +1,79 @@
-# EcoSort Bin – Smart Automated Waste-Sorting System
+# EcoSort Bin
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Platform-Arduino_Uno_R4-teal?logo=arduino" />
-  <img src="https://img.shields.io/badge/Accuracy-97.5%25-brightgreen" />
-  <img src="https://img.shields.io/badge/Sensor_Fusion-4_Sensors-blue" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow" />
-</p>
+> Embedded waste-sorting prototype using rule-based multi-sensor classification.
 
-EcoSort is a low-cost embedded systems project that automatically classifies
-and sorts waste using multi-sensor fusion and a servo-driven mechanical
-platform. The system removes user guesswork by identifying waste items
-based on weight, color, reflectivity, and proximity.
+EcoSort is an Arduino-based embedded systems project that classifies and sorts waste items using weight, color, reflectivity, and distance sensing. Its strongest signal is practical sensor integration and finite-state machine control on constrained hardware.
 
-> “A Trash Bin with a College Degree”
+## Why This Repo Is Useful
 
-## Project Motivation
-Recycling contamination rates can reach 25–35% in public and institutional
-settings due to incorrect disposal. EcoSort addresses this problem by
-automating classification using inexpensive sensors and rule-based logic,
-without requiring computer vision or machine learning.
+- multi-sensor embedded integration on a low-cost platform
+- rule-based classification without hiding behind a vague "AI" label
+- actuator control tied to sensing and state transitions
+- a complete prototype with BOM and technical report
 
-## System Overview
-EcoSort uses an Arduino-based controller to read data from multiple sensors,
-classify waste items, and actuate a seesaw-style platform that directs items
-into either trash or recycling compartments.
+## System Inputs and Outputs
 
-**Inputs**
-- Load cell + HX711 (weight)
-- Ultrasonic sensor (presence / height proxy)
-- IR reflective sensor (material reflectivity)
-- TCS34725 color sensor (RGB)
-
-**Outputs**
-- Servo-actuated sorting platform
-- OLED display (user feedback)
-- Optional buzzer
-
-## Hardware Components
-- Arduino Uno R4 WiFi
-- Load cell (5 kg) with HX711 amplifier
-- HC-SR04 ultrasonic sensor
-- TCRT5000 / HW-870 IR reflective sensor
+### Sensors
+- load cell + HX711
 - TCS34725 color sensor
-- MG996R servo motor
-- SSD1306 OLED display
-- Cardboard / prototype enclosure
+- IR reflective sensor
+- HC-SR04 ultrasonic sensor
 
-## Software Features
-- Rule-based waste classification
-- Multi-sensor fusion on a microcontroller
-- Finite state machine for detection, measurement, and actuation
-- Real-time OLED feedback
-- Modular Arduino firmware
+### Outputs
+- servo-driven sorting platform
+- OLED user feedback
+- optional buzzer
 
-## Results
-- 40 classification trials (9 excluded due to mechanical jamming)
-- Overall accuracy: **97.5%**
-- Correctly classified paper, cardboard, plastic bottles, and mint containers
+## Control Approach
 
-## Repository Structure
-- `src/` – Arduino firmware
-- `hardware/` – Wiring diagrams and mechanical design
-- `docs/` – Full technical report
-- `media/` – Images, diagrams, and demos
+The project uses rule-based classification and a finite-state machine, not machine learning. That is a strength here because it matches the actual implementation.
 
-## Future Improvements
-- Camera-based classification with ML
-- IoT logging and analytics dashboard
-- Battery-powered operation
-- Improved enclosure and mechanics
+## Results, Framed Honestly
 
-## How to Run
-1. Install Arduino IDE
-2. Install required libraries:
-   - HX711
-   - Adafruit TCS34725
-   - Adafruit GFX
-   - Adafruit SSD1306
-3. Connect hardware according to wiring diagrams
-4. Open `src/firmware/ecosort.ino`
-5. Upload to Arduino Uno R4
-6. Calibrate the load cell before testing
+The repo reports:
+- 40 classification trials
+- 9 trials excluded due to mechanical jamming
+- 97.5% classification accuracy on the remaining completed trials
 
-## Bill of Materials (BOM)
-| Component | Qty | Cost (USD) |
-|---------|-----|------------|
-| Arduino Uno R4 WiFi | 1 | $29.00 |
-| Load Cell + HX711 | 1 | $6.99 |
-| MG996R Servo | 1 | $6.99 |
-| OLED Display | 1 | $6.99 |
-| TCS34725 Color Sensor | 1 | $3.53 |
-| HC-SR04 Ultrasonic | 1 | $3.50 |
-| IR Reflective Sensor | 1 | $0.87 |
-| Misc. wiring / enclosure | - | ~$10 |
-| **Total** |  | **~$70** |
+That means the repo currently shows strong classification performance on completed runs, but not yet strong overall mechanical reliability. Both numbers matter, so they should stay separated.
 
-## 📽️ Demo Video
+## Repository Layout
 
-<p align="center">
-  <a href="https://youtu.be/RpR4vYVQu_Y">
-    <img src="https://img.youtube.com/vi/RpR4vYVQu_Y/0.jpg" width="650"/>
-  </a>
-</p>
+| Path | Purpose |
+|---|---|
+| `src/firmware/ecosort.ino` | Arduino firmware |
+| `docs/` | report and supporting documentation |
+| `hardware/` | hardware notes |
+| `media/` | demo/media placeholders |
 
-## Author
-**Yusuf Guenena**  
-M.S. Robotics Engineering – Embedded Systems Design  
-Wayne State University
+## Hardware
+
+| Component | Purpose |
+|---|---|
+| Arduino Uno R4 WiFi | control board |
+| load cell + HX711 | weight sensing |
+| TCS34725 | color sensing |
+| HC-SR04 | distance / presence |
+| IR reflective sensor | material reflectivity cue |
+| MG996R servo | sorter actuation |
+| SSD1306 OLED | user feedback |
+
+## Why This Repo Helps The Portfolio
+
+For robotics employers, this is not the headline repo. For embedded and hardware teams, it is useful because it shows:
+- real sensor fusion on a microcontroller
+- state-machine based embedded control
+- cost-aware prototyping
+- documented project outcomes with a written report
+
+## Highest-Value Next Additions
+
+The next improvements that would raise credibility most are:
+- raw trial table or confusion matrix
+- explicit discussion of mechanical jam rate
+- wiring diagram in the public README
+- short demo media embedded directly in the repo docs
+
+## Demo
+
+Current demo link: https://youtu.be/RpR4vYVQu_Y
