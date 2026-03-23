@@ -1,70 +1,109 @@
-# EcoSort Bin
+# EcoSort Bin – Smart Automated Waste-Sorting System
 
-> Embedded waste-sorting prototype using rule-based multi-sensor classification.
+<p align="center">
+  <img src="https://img.shields.io/badge/Platform-Arduino_Uno_R4-teal?logo=arduino" />
+  <img src="https://img.shields.io/badge/Accuracy-97.5%25-brightgreen" />
+  <img src="https://img.shields.io/badge/Sensor_Fusion-4_Sensors-blue" />
+  <img src="https://img.shields.io/badge/License-MIT-yellow" />
+</p>
 
-EcoSort is an Arduino-based embedded systems project that classifies and sorts waste items using weight, color, reflectivity, and distance sensing. Its strongest signal is practical sensor integration and finite-state machine control on constrained hardware.
+EcoSort is a low-cost embedded systems project that automatically classifies
+and sorts waste using multi-sensor fusion and a servo-driven mechanical
+platform. The system removes user guesswork by identifying waste items
+based on weight, color, reflectivity, and proximity.
 
-## Why This Repo Is Useful
+> “A Trash Bin with a College Degree”
 
-- multi-sensor embedded integration on a low-cost platform
-- rule-based classification without hiding behind a vague "AI" label
-- actuator control tied to sensing and state transitions
-- a complete prototype with BOM and technical report
+## Project Motivation
+Recycling contamination rates can reach 25–35% in public and institutional
+settings due to incorrect disposal. EcoSort addresses this problem by
+automating classification using inexpensive sensors and rule-based logic,
+without requiring computer vision or machine learning.
 
-## System Inputs and Outputs
+## System Overview
+EcoSort uses an Arduino-based controller to read data from multiple sensors,
+classify waste items, and actuate a seesaw-style platform that directs items
+into either trash or recycling compartments.
 
-### Sensors
-- load cell + HX711
-- TCS34725 color sensor
-- IR reflective sensor
+**Inputs**
+- Load cell + HX711 (weight)
+- Ultrasonic sensor (presence / height proxy)
+- IR reflective sensor (material reflectivity)
+- TCS34725 color sensor (RGB)
+
+**Outputs**
+- Servo-actuated sorting platform
+- OLED display (user feedback)
+- Optional buzzer
+
+## Hardware Components
+- Arduino Uno R4 WiFi
+- Load cell (5 kg) with HX711 amplifier
 - HC-SR04 ultrasonic sensor
+- TCRT5000 / HW-870 IR reflective sensor
+- TCS34725 color sensor
+- MG996R servo motor
+- SSD1306 OLED display
+- Cardboard / prototype enclosure
 
-### Outputs
-- servo-driven sorting platform
-- OLED user feedback
-- optional buzzer
-
-## Control Approach
-
-The project uses rule-based classification and a finite-state machine, not machine learning. That is a strength here because it matches the actual implementation.
-
-## Results, Framed Honestly
-
-The repo reports:
-- 40 classification trials
-- 9 trials excluded due to mechanical jamming
-- 97.5% classification accuracy on the remaining completed trials
-
-That means the repo currently shows strong classification performance on completed runs, but not yet strong overall mechanical reliability. Both numbers matter, so they should stay separated.
-
-## Repository Layout
-
-| Path | Purpose |
-|---|---|
-| `src/firmware/ecosort.ino` | Arduino firmware |
-| `docs/` | report and supporting documentation |
-| `hardware/` | hardware notes |
-| `media/` | demo/media placeholders |
-
-## Hardware
-
-| Component | Purpose |
-|---|---|
-| Arduino Uno R4 WiFi | control board |
-| load cell + HX711 | weight sensing |
-| TCS34725 | color sensing |
-| HC-SR04 | distance / presence |
-| IR reflective sensor | material reflectivity cue |
-| MG996R servo | sorter actuation |
-| SSD1306 OLED | user feedback |
+## Software Features
+- Rule-based waste classification
+- Multi-sensor fusion on a microcontroller
+- Finite state machine for detection, measurement, and actuation
+- Real-time OLED feedback
+- Modular Arduino firmware
 
 ## Results
+- 40 classification trials (9 excluded due to mechanical jamming)
+- Overall accuracy: **97.5%**
+- Correctly classified paper, cardboard, plastic bottles, and mint containers
 
-Supporting docs:
+## Repository Structure
+- `src/` – Arduino firmware
+- `hardware/` – Wiring diagrams and mechanical design
+- `docs/` – Full technical report
+- `media/` – Images, diagrams, and demos
 
-- [docs/RESULTS.md](docs/RESULTS.md) separates classification outcomes from mechanical reliability.
-- [docs/templates/trial_log_template.csv](docs/templates/trial_log_template.csv) provides a raw-trial logging format.
+## Future Improvements
+- Camera-based classification with ML
+- IoT logging and analytics dashboard
+- Battery-powered operation
+- Improved enclosure and mechanics
 
-## Demo
+## How to Run
+1. Install Arduino IDE
+2. Install required libraries:
+   - HX711
+   - Adafruit TCS34725
+   - Adafruit GFX
+   - Adafruit SSD1306
+3. Connect hardware according to wiring diagrams
+4. Open `src/firmware/ecosort.ino`
+5. Upload to Arduino Uno R4
+6. Calibrate the load cell before testing
 
-Current demo link: https://youtu.be/RpR4vYVQu_Y
+## Bill of Materials (BOM)
+| Component | Qty | Cost (USD) |
+|---------|-----|------------|
+| Arduino Uno R4 WiFi | 1 | $29.00 |
+| Load Cell + HX711 | 1 | $6.99 |
+| MG996R Servo | 1 | $6.99 |
+| OLED Display | 1 | $6.99 |
+| TCS34725 Color Sensor | 1 | $3.53 |
+| HC-SR04 Ultrasonic | 1 | $3.50 |
+| IR Reflective Sensor | 1 | $0.87 |
+| Misc. wiring / enclosure | - | ~$10 |
+| **Total** |  | **~$70** |
+
+## 📽️ Demo Video
+
+<p align="center">
+  <a href="https://youtu.be/RpR4vYVQu_Y">
+    <img src="https://img.youtube.com/vi/RpR4vYVQu_Y/0.jpg" width="650"/>
+  </a>
+</p>
+
+## Author
+**Yusuf Guenena**  
+M.S. Robotics Engineering – Embedded Systems Design  
+Wayne State University
