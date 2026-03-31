@@ -12,7 +12,7 @@ and sorts waste using multi-sensor fusion and a servo-driven mechanical
 platform. The system removes user guesswork by identifying waste items
 based on weight, color, reflectivity, and proximity.
 
-> “A Trash Bin with a College Degree”
+> "A Trash Bin with a College Degree"
 
 ## Project Motivation
 Recycling contamination rates can reach 25–35% in public and institutional
@@ -58,6 +58,14 @@ into either trash or recycling compartments.
 - Overall accuracy: **97.5%**
 - Correctly classified paper, cardboard, plastic bottles, and mint containers
 
+## 📽️ Demo Video
+
+<p align="center">
+  <a href="https://youtu.be/RpR4vYVQu_Y">
+    <img src="https://img.youtube.com/vi/RpR4vYVQu_Y/0.jpg" width="650"/>
+  </a>
+</p>
+
 ## Repository Structure
 - `src/` – Arduino firmware
 - `hardware/` – Wiring diagrams and mechanical design
@@ -94,14 +102,6 @@ into either trash or recycling compartments.
 | IR Reflective Sensor | 1 | $0.87 |
 | Misc. wiring / enclosure | - | ~$10 |
 | **Total** |  | **~$70** |
-
-## 📽️ Demo Video
-
-<p align="center">
-  <a href="https://youtu.be/RpR4vYVQu_Y">
-    <img src="https://img.youtube.com/vi/RpR4vYVQu_Y/0.jpg" width="650"/>
-  </a>
-</p>
 
 ## Author
 **Yusuf Guenena**  
