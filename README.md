@@ -1,4 +1,4 @@
-# EcoSort Bin – Smart Automated Waste-Sorting System
+# EcoSort Bin: Smart Automated Waste-Sorting System
 
 <p align="center">
   <img src="https://img.shields.io/badge/Platform-Arduino_Uno_R4-teal?logo=arduino" />
@@ -15,7 +15,7 @@ based on weight, color, reflectivity, and proximity.
 > "A Trash Bin with a College Degree"
 
 ## Project Motivation
-Recycling contamination rates can reach 25–35% in public and institutional
+Recycling contamination rates can reach 25-35% in public and institutional
 settings due to incorrect disposal. EcoSort addresses this problem by
 automating classification using inexpensive sensors and rule-based logic,
 without requiring computer vision or machine learning.
@@ -67,10 +67,10 @@ into either trash or recycling compartments.
 </p>
 
 ## Repository Structure
-- `src/` – Arduino firmware
-- `hardware/` – Wiring diagrams and mechanical design
-- `docs/` – Full technical report
-- `media/` – Images, diagrams, and demos
+- `src/`: Arduino firmware
+- `hardware/`: Wiring diagrams and mechanical design
+- `docs/`: Full technical report
+- `media/`: Images, diagrams, and demos
 
 ## Future Improvements
 - Camera-based classification with ML
@@ -105,5 +105,5 @@ into either trash or recycling compartments.
 
 ## Author
 **Yusuf Guenena**  
-M.S. Robotics Engineering – Embedded Systems Design  
+M.S. Robotics Engineering, Embedded Systems Design  
 Wayne State University
