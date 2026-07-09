@@ -58,7 +58,7 @@ into either trash or recycling compartments.
 - Overall accuracy: **97.5%**
 - Correctly classified paper, cardboard, plastic bottles, and mint containers
 
-## 📽️ Demo Video
+## Demo Video
 
 <p align="center">
   <a href="https://youtu.be/RpR4vYVQu_Y">
